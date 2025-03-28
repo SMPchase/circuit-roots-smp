@@ -1,18 +1,15 @@
+/* Link Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 /* Set the background */
 body {
     background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Background%20.png');
     background-size: cover;
     background-position: center center;
-    font-family: 'Minecraftia', sans-serif; /* Ensure Minecraft font is used */
+    font-family: 'Press Start 2P', sans-serif; /* Use the pixel-style font */
     color: white;
     margin: 0;
     padding: 0;
-}
-
-/* Ensure the font is loaded correctly */
-@font-face {
-    font-family: 'Minecraftia';
-    src: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Minecraftia-Regular.ttf') format('truetype');
 }
 
 /* Container to center content */
