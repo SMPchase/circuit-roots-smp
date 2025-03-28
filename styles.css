@@ -1,6 +1,6 @@
 /* Set the background */
 body {
-    background-image: url('A_pixel-art_style_digital_image_from_the_game_Mine.png'); /* Ensure path is correct */
+    background-image: url(https://github.com/SMPchase/circuit-roots-smp/blob/main/Assets/Background%20.png?raw=true); /* Ensure path is correct */
     background-size: cover;
     background-position: center center;
     font-family: 'Minecraftia', sans-serif;
