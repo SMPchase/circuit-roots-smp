@@ -53,11 +53,12 @@ header h1 {
     margin: 10px 0;
 }
 
-/* Call to Action buttons */
+/* Button Section */
 .cta {
     margin-top: 30px;
 }
 
+/* General Button Styling */
 .button {
     font-size: 1.5em;
     font-weight: bold;
@@ -68,43 +69,49 @@ header h1 {
     display: inline-block;
     cursor: pointer;
     color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 250px; /* Fixed size for buttons */
+    height: 100px; /* Fixed height for buttons */
     background-position: center center;
-    width: 250px; /* Adjust size of the button */
-    height: 100px; /* Adjust size of the button */
+    background-size: cover;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Text only appears when the image is missing */
-.button span {
-    display: inline; /* Text is displayed by default */
-}
-
-.button img {
-    display: block; /* Show image */
-}
-
-.button img:only-child {
-    display: none; /* Hide image if only text exists */
-}
-
-.button:hover {
-    opacity: 0.8;
-}
-
+/* Download Button Styling */
 .download {
     background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Downloads.jpeg');
 }
 
+/* How to Join Button Styling */
 .join {
     background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/How%20to%20join.jpeg');
 }
 
-/* Hide the text if the image is loaded */
+/* Button Text Handling */
+.button span {
+    display: none; /* Hide the text by default */
+}
+
+/* When the background image fails to load, display text */
+.button img:only-child {
+    display: none; /* If only the image exists and fails, hide it */
+}
+
+.button img {
+    display: block; /* Make the image visible by default */
+}
+
 .button img:failed {
-    display: none; /* Hide image if it fails */
+    display: none; /* Hide the image if it fails */
 }
 
 .button span {
-    display: inline; /* Show text when the image fails */
+    display: inline-block; /* Display text when the image is missing */
+    text-align: center;
+    line-height: 100px; /* Center the text vertically */
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    opacity: 0.8;
 }
