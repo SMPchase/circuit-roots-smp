@@ -15,13 +15,12 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    padding-left: 2.5cm; /* Center content */
-    padding-right: 2.5cm; /* Center content */
+    padding-left: calc(5cm); /* This shifts the text 5cm to the left */
 }
 
-/* Header Styling (No shadow effect) */
+/* Header Styling */
 header {
-    background-color: rgba(0, 0, 0, 0.5); /* Slight transparency for readability */
+    background-color: rgba(0, 0, 0, 0.7); /* Slight transparency for readability */
     padding: 20px;
     margin-bottom: 30px;
 }
@@ -30,7 +29,6 @@ header h1 {
     font-size: 3em;
     font-weight: bold;
     color: #32CD32; /* Minecraft green */
-    margin: 0; /* Removed any extra margin */
 }
 
 /* Features section */
