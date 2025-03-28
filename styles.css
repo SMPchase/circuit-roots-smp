@@ -7,9 +7,13 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Ensure Minecraftia font is correctly linked */
+/* Ensure Minecraftia font is linked */
 @font-face {
     font-family: 'Minecraftia';
     src: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/minecraftia/Minecraftia-Regular.ttf') format('truetype');
@@ -17,64 +21,80 @@ body {
 
 /* Container to center content */
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    width: 70%;
 }
 
-/* Header Styling */
 header {
-    background-color: rgba(0, 0, 0, 0.7); /* Slight transparency for readability */
-    padding: 20px;
     margin-bottom: 30px;
 }
 
+/* Header Styling */
 header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: bold;
     color: #32CD32; /* Minecraft green */
+    margin-bottom: 20px;
 }
 
-/* Features section */
-.features h2 {
+header h2 {
     font-size: 2em;
-    font-weight: bold;
-    color: #32CD32; /* Minecraft green */
+    color: #32CD32;
+    margin-bottom: 10px;
 }
 
-.features ul {
+ul {
     list-style-type: none;
     padding: 0;
+    font-size: 1.2em;
 }
 
-.features li {
-    font-size: 1.5em;
-    margin: 10px 0;
+ul li {
+    margin-bottom: 8px;
 }
 
 /* Button Section */
 .cta {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
-/* General Button Styling */
 .button {
     font-size: 1.5em;
     font-weight: bold;
-    padding: 15px 30px;
+    padding: 20px 40px;
     margin: 10px;
     text-decoration: none;
     border-radius: 10px;
     display: inline-block;
     cursor: pointer;
-    color: white;
-    width: 250px; /* Fixed size for buttons */
-    height: 100px; /* Fixed height for buttons */
+    width: 250px;
+    height: 100px;
     background-position: center center;
     background-size: cover;
     border: 2px solid #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.button img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 /* Download Button Styling */
@@ -88,30 +108,23 @@ header h1 {
 }
 
 /* Button Text Handling */
-.button span {
-    display: none; /* Hide the text by default */
-}
-
-/* When the background image fails to load, display text */
-.button img:only-child {
-    display: none; /* If only the image exists and fails, hide it */
-}
-
 .button img {
-    display: block; /* Make the image visible by default */
+    opacity: 0; /* Hide the image by default */
+}
+
+.button img:only-child {
+    opacity: 1; /* If the image doesn't load, show the text */
+}
+
+.button:hover {
+    opacity: 0.8;
 }
 
 .button img:failed {
-    display: none; /* Hide the image if it fails */
+    opacity: 1; /* If image fails to load, show fallback text */
 }
 
-.button span {
-    display: inline-block; /* Display text when the image is missing */
-    text-align: center;
-    line-height: 100px; /* Center the text vertically */
-}
-
-/* Hover effect for buttons */
-.button:hover {
-    opacity: 0.8;
+.button:focus span,
+.button:active span {
+    display: inline-block; /* Show text on button focus or click */
 }
