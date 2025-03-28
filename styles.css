@@ -3,7 +3,7 @@ body {
     background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Background%20.png');
     background-size: cover;
     background-position: center center;
-    font-family: 'Minecraftia', sans-serif;
+    font-family: 'Press Start 2P', sans-serif; /* Using Google Fonts for Minecraft style */
     color: white;
     margin: 0;
     padding: 0;
@@ -15,12 +15,8 @@ body {
 
 /* Ensure Minecraftia font is linked */
 @font-face {
-    font-family: 'Minecraftia';
-    src: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/minecraftia/Minecraftia-Regular.ttf') format('truetype');
-}
-
-body, h1, h2, ul, .button {
-    font-family: 'Minecraftia', sans-serif; /* Apply font globally */
+    font-family: 'Press Start 2P';
+    src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 }
 
 /* Container to center content */
@@ -168,3 +164,10 @@ ul li {
 @media screen and (max-width: 480px) {
     header h1 {
         font-size: 2em;
+    }
+
+    .button {
+        width: 100%;
+        height: 70px; /* Make buttons more compact */
+    }
+}
