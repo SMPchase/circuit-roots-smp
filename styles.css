@@ -21,23 +21,24 @@ body {
 
 /* Container to center content */
 .container {
-    text-align: center;
     width: 80%;
     max-width: 900px;
     padding: 20px;
+    text-align: center;
     box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
+    border-radius: 10px;
 }
 
+/* Header Styling */
 header {
     margin-bottom: 30px;
 }
 
-/* Header Styling */
 header h1 {
     font-size: 3.5em;
     font-weight: bold;
     color: #32CD32; /* Minecraft green */
-    margin-bottom: 20px;
 }
 
 header h2 {
@@ -46,6 +47,7 @@ header h2 {
     margin-bottom: 10px;
 }
 
+/* Features Section Styling */
 ul {
     list-style-type: none;
     padding: 0;
