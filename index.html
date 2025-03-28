@@ -16,38 +16,51 @@
     <style>
         html {
             scroll-behavior: smooth;
+            height: 100%; /* Ensure the HTML element is full height for smooth scrolling */
         }
 
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Press Start 2P', sans-serif;
+            font-family: 'Press Start 2P', sans-serif; /* Ensure font applies globally */
+            height: auto; /* Allow scrolling */
+            min-height: 100vh; /* Ensure at least the viewport height */
         }
 
-        header {
-            background-color: rgba(0, 0, 0, 0.7); /* Slight transparency for readability */
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-
+        /* Container to center content */
         .container {
             width: 80%;
             margin: 0 auto;
             text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            padding-left: 2.5cm; /* Center content */
+            padding-right: 2.5cm; /* Center content */
         }
 
-        h1 {
+        /* Header Styling */
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Slight transparency for readability */
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        header h1 {
             font-size: 3em;
             font-weight: bold;
             color: #32CD32; /* Minecraft green */
+            margin: 0; /* Remove extra margin */
         }
 
-        h2, h3 {
+        header h2 {
+            font-size: 2em;
+            font-weight: bold;
             color: white;
-            font-size: 1.8em;
             margin-top: 10px;
         }
 
+        /* Features Section */
         .features {
             text-align: left;
             margin-top: 20px;
@@ -64,6 +77,7 @@
             color: #f1f1f1;
         }
 
+        /* CTA Section */
         .cta {
             margin-top: 30px;
         }
