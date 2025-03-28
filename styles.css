@@ -68,12 +68,14 @@ header h1 {
     display: inline-block;
     cursor: pointer;
     color: white;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    width: 250px; /* Adjust size of the button */
+    height: 100px; /* Adjust size of the button */
 }
 
-/* Ensure the text is visible only if the image is not available */
+/* Text only appears when the image is missing */
 .button span {
     display: inline; /* Text is displayed by default */
 }
@@ -92,14 +94,10 @@ header h1 {
 
 .download {
     background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Downloads.jpeg');
-    width: 250px; /* Adjust size of the button */
-    height: 100px; /* Adjust size of the button */
 }
 
 .join {
     background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/How%20to%20join.jpeg');
-    width: 250px; /* Adjust size of the button */
-    height: 100px; /* Adjust size of the button */
 }
 
 /* Hide the text if the image is loaded */
