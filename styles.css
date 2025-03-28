@@ -1,15 +1,17 @@
-/* Link Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
 /* Set the background */
 body {
     background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Background%20.png');
     background-size: cover;
     background-position: center center;
-    font-family: 'Press Start 2P', sans-serif; /* Use the pixel-style font */
+    font-family: 'Minecraftia', sans-serif;
     color: white;
     margin: 0;
     padding: 0;
+}
+
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Minecraftia-Regular.ttf') format('truetype');
 }
 
 /* Container to center content */
@@ -34,50 +36,50 @@ header h1 {
 }
 
 /* Features section */
-.features {
-    margin-bottom: 30px;
-}
-
 .features h2 {
     font-size: 2em;
     font-weight: bold;
-    color: #32CD32;
+    color: #32CD32; /* Minecraft green */
 }
 
-/* Buttons styling */
-button {
-    background-color: #32CD32; /* Minecraft green */
-    color: white;
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Call to Action buttons */
+.cta {
+    margin-top: 30px;
+}
+
+.button {
     font-size: 1.5em;
     font-weight: bold;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+    padding: 15px 30px;
     margin: 10px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #228B22; /* Darker green when hovering */
-}
-
-button:active {
-    background-color: #006400; /* Even darker green when clicked */
-}
-
-/* Footer */
-footer {
-    margin-top: 30px;
-    font-size: 1.2em;
-    color: #32CD32;
-}
-
-footer a {
-    color: #32CD32;
     text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.download {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+}
+
+.join {
+    background-color: #008CBA; /* Blue background */
+    color: white;
+    border: none;
+}
+
+.button:hover {
+    opacity: 0.8;
 }
