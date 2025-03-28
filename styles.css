@@ -15,8 +15,8 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    padding-left: 2.5cm; /* Adjust padding to be even on both sides */
-    padding-right: 2.5cm; /* Adjust padding to be even on both sides */
+    padding-left: 2.5cm; /* Center content */
+    padding-right: 2.5cm; /* Center content */
 }
 
 /* Header Styling (No shadow effect) */
@@ -24,7 +24,6 @@ header {
     background-color: rgba(0, 0, 0, 0.5); /* Slight transparency for readability */
     padding: 20px;
     margin-bottom: 30px;
-    box-shadow: none; /* Removed drop shadow */
 }
 
 header h1 {
