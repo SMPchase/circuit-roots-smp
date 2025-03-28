@@ -9,6 +9,7 @@ body {
     padding: 0;
 }
 
+/* Ensure Minecraftia font is correctly linked */
 @font-face {
     font-family: 'Minecraftia';
     src: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/minecraftia/Minecraftia-Regular.ttf') format('truetype');
@@ -74,7 +75,7 @@ header h1 {
 
 /* Ensure the text is visible only if the image is not available */
 .button span {
-    display: none; /* Hide text by default */
+    display: inline; /* Text is displayed by default */
 }
 
 .button img {
@@ -96,4 +97,16 @@ header h1 {
 }
 
 .join {
-    background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-s
+    background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/How%20to%20join.jpeg');
+    width: 250px; /* Adjust size of the button */
+    height: 100px; /* Adjust size of the button */
+}
+
+/* Hide the text if the image is loaded */
+.button img:failed {
+    display: none; /* Hide image if it fails */
+}
+
+.button span {
+    display: inline; /* Show text when the image fails */
+}
