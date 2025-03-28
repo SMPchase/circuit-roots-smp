@@ -72,6 +72,23 @@ header h1 {
     background-position: center center;
 }
 
+/* Ensure the text is visible only if the image is not available */
+.button span {
+    display: none; /* Hide text by default */
+}
+
+.button img {
+    display: block; /* Show image */
+}
+
+.button img:only-child {
+    display: none; /* Hide image if only text exists */
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
 .download {
     background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Downloads.jpeg');
     width: 250px; /* Adjust size of the button */
@@ -79,11 +96,4 @@ header h1 {
 }
 
 .join {
-    background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/How%20to%20join.jpeg');
-    width: 250px; /* Adjust size of the button */
-    height: 100px; /* Adjust size of the button */
-}
-
-.button:hover {
-    opacity: 0.8;
-}
+    background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-s
