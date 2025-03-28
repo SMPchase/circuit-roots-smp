@@ -15,7 +15,8 @@ body {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    padding-left: calc(5cm); /* This shifts the text 5cm to the left */
+    padding-left: 2.5cm; /* Adjust padding to be even on both sides */
+    padding-right: 2.5cm; /* Adjust padding to be even on both sides */
 }
 
 /* Header Styling */
