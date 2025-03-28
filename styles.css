@@ -3,20 +3,17 @@ body {
     background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Background%20.png');
     background-size: cover;
     background-position: center center;
-    font-family: 'Minecraftia', sans-serif;
+    font-family: 'Minecraftia', sans-serif; /* Ensure Minecraft font is used */
     color: white;
     margin: 0;
     padding: 0;
 }
+
+/* Ensure the font is loaded correctly */
 @font-face {
     font-family: 'Minecraftia';
     src: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Minecraftia-Regular.ttf') format('truetype');
 }
-
-body {
-    font-family: 'Minecraftia', sans-serif;
-}
-
 
 /* Container to center content */
 .container {
@@ -41,39 +38,49 @@ header h1 {
 
 /* Features section */
 .features {
-    margin: 40px 0;
+    margin-bottom: 30px;
 }
 
-/* Button Styling */
+.features h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #32CD32;
+}
+
+/* Buttons styling */
 button {
     background-color: #32CD32; /* Minecraft green */
     color: white;
-    font-family: 'Minecraftia', sans-serif;
-    padding: 15px 40px;
     font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #228B22; /* Darker Minecraft green */
+    background-color: #228B22; /* Darker green when hovering */
 }
 
-button:focus {
-    outline: none;
+button:active {
+    background-color: #006400; /* Even darker green when clicked */
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #32CD32;
 }
 
 footer a {
-    color: white;
+    color: #32CD32;
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
