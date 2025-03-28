@@ -4,26 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circuit Roots SMP</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Minecraftia&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('Background.png'); /* Minecraft-style background */
+            background-size: cover;
+            font-family: 'Minecraftia', sans-serif;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            color: #76b041;
+            font-size: 4rem;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #76b041;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px;
+        }
+        .button:hover {
+            background-color: #4a7f2a;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Circuit Roots SMP!</h1>
         <h2>Your custom Minecraft SMP modpack</h2>
-        <section class="features">
-            <h3>Features</h3>
-            <ul>
-                <li>Custom Mods</li>
-                <li>Voice Chat Integration</li>
-                <li>Tech and Exploration</li>
-                <li>Immersive Farming and Vehicles</li>
-            </ul>
-        </section>
-        <section class="join">
-            <h3>How to Join</h3>
-            <p>Click the button below to download the modpack:</p>
-            <button onclick="window.location.href='modpack-download-link'">Download Modpack</button>
-        </section>
+        <div>
+            <a href="DownloadLink" class="button">Download Modpack</a>
+            <a href="HowToJoinLink" class="button">How to Join</a>
+        </div>
     </div>
     <footer>
         <p>&copy; 2025 Circuit Roots SMP</p>
