@@ -8,7 +8,13 @@ body {
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Minecraftia-Regular.ttf') format('truetype');
+}
 
+body {
+    font-family: 'Minecraftia', sans-serif;
 /* Container to center content */
 .container {
     width: 80%;
