@@ -11,6 +11,101 @@
     
     <!-- Link to the stylesheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Add Smooth Scrolling -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Press Start 2P', sans-serif;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Slight transparency for readability */
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            color: #32CD32; /* Minecraft green */
+        }
+        h2, h3 {
+            color: white;
+            font-size: 1.8em;
+            margin-top: 10px;
+        }
+        .features {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features li {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #f1f1f1;
+        }
+        .cta {
+            margin-top: 30px;
+        }
+        .cta h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .cta ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .cta li {
+            font-size: 1.2em;
+            color: #f1f1f1;
+            margin-bottom: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            padding: 15px 30px;
+            margin: 15px;
+            border-radius: 8px;
+            font-size: 1.3em;
+            color: white;
+            background-color: #4CAF50;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .button:hover {
+            transform: scale(1.1);
+            background-color: #45a049;
+        }
+        .button img {
+            vertical-align: middle;
+            width: 40px;
+            margin-left: 10px;
+        }
+
+        /* Make the layout responsive */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .button {
+                font-size: 1.1em;
+                padding: 12px 25px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -39,4 +134,11 @@
 
                 <div class="buttons">
                     <a href="#" class="button download"><span>Download Modpack</span><img src="Assets/Downloads.jpeg" alt="Download Modpack"></a>
-                    <a href="#" class="button join"><span>How to Join</span><img src="Assets/
+                    <a href="#" class="button join"><span>How to Join</span><img src="Assets/How to join.jpeg" alt="How to Join"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
