@@ -1,6 +1,6 @@
 /* Set the background */
 body {
-    background-image: url(https://github.com/SMPchase/circuit-roots-smp/blob/main/Assets/Background%20.png?raw=true); /* Ensure path is correct */
+    background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Background%20.png');
     background-size: cover;
     background-position: center center;
     font-family: 'Minecraftia', sans-serif;
