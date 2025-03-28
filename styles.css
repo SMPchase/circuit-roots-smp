@@ -1,6 +1,6 @@
 /* Set the background */
 body {
-background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Background%20.png');
+    background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Background%20.png');
     background-size: cover;
     background-position: center center;
     font-family: 'Minecraftia', sans-serif;
@@ -32,55 +32,36 @@ header h1 {
 
 /* Features section */
 .features {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    margin-bottom: 30px;
+    margin: 40px 0;
 }
 
-.features h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.features ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.features ul li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-/* Button Styles */
-.button {
-    display: inline-block;
-    padding: 15px 30px;
-    margin: 10px;
-    background-color: #32CD32;
+/* Button Styling */
+button {
+    background-color: #32CD32; /* Minecraft green */
     color: white;
-    text-decoration: none;
-    font-size: 1.2em;
+    font-family: 'Minecraftia', sans-serif;
+    padding: 15px 40px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.button:hover {
-    background-color: #228B22; /* Darker green on hover */
+button:hover {
+    background-color: #228B22; /* Darker Minecraft green */
 }
 
-/* Download Section */
-.download {
-    margin-top: 30px;
+button:focus {
+    outline: none;
 }
 
-/* Footer (optional, you can add this) */
+/* Footer Styling */
 footer {
-    background-color: #111;
+    background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 10px 0;
     text-align: center;
-    font-size: 0.8em;
 }
 
 footer a {
