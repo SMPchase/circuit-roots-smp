@@ -1,0 +1,129 @@
+/* Set the background */
+body {
+    background-image: url('https://raw.githubusercontent.com/SMPchase/circuit-roots-smp/main/Assets/Background%20.png');
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: auto; /* Remove the fixed height to allow full scrolling */
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+/* Ensure smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Container to center content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-left: 2.5cm; /* Shift content 2.5cm to the left */
+    padding-right: 2.5cm; /* Shift content 2.5cm to the right */
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Slight transparency for readability */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+/* Header Text */
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #32CD32; /* Minecraft green */
+    margin: 0; /* Remove extra margin */
+}
+
+header h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Features Section */
+.features {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #f1f1f1;
+}
+
+/* CTA Section */
+.cta {
+    margin-top: 30px;
+}
+
+.cta h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.cta ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cta li {
+    font-size: 1.2em;
+    color: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+/* Buttons Styling */
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 15px;
+    border-radius: 8px;
+    font-size: 1.3em;
+    color: white;
+    background-color: #4CAF50;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: #45a049;
+}
+
+.button img {
+    vertical-align: middle;
+    width: 40px;
+    margin-left: 10px;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .button {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+}
